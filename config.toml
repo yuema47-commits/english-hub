@@ -2,7 +2,8 @@ baseURL = "https://yourusername.github.io/english-hub/"
 locale = "zh-cn"
 title = "英语学习空间"
 theme = "english-hub"
-paginate = 9
+[pagination]
+  pagerSize = 9
 
 [params]
   description = "我的个人英语学习空间 — 方法、阅读与听力"
