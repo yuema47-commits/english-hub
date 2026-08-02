@@ -1,0 +1,11 @@
+name = "English Hub"
+license = "MIT"
+licenselink = "https://opensource.org/licenses/MIT"
+description = "A warm, colorful Hugo theme for personal English learning — methods, reading, and listening."
+homepage = "https://github.com/yourusername/english-hub"
+tags = ["blog", "education", "responsive", "card-layout"]
+features = ["responsive", "card-grid", "color-sections", "decap-cms"]
+min_version = "0.80.0"
+
+[author]
+  name = "English Learner"

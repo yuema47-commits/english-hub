@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Tags on 英语学习空间</title>
+		<link>http://localhost:1313/english-hub/tags/</link>
+		<description>Recent content in Tags on 英语学习空间</description>
+		<generator>Hugo</generator>
+		<language>zh-cn</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 28 Jul 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/english-hub/tags/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>口语</title>
+				<link>http://localhost:1313/english-hub/tags/%E5%8F%A3%E8%AF%AD/</link>
+				<pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/english-hub/tags/%E5%8F%A3%E8%AF%AD/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>听力</title>
+				<link>http://localhost:1313/english-hub/tags/%E5%90%AC%E5%8A%9B/</link>
+				<pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/english-hub/tags/%E5%90%AC%E5%8A%9B/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>方法论</title>
+				<link>http://localhost:1313/english-hub/tags/%E6%96%B9%E6%B3%95%E8%AE%BA/</link>
+				<pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/english-hub/tags/%E6%96%B9%E6%B3%95%E8%AE%BA/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>生活方式</title>
+				<link>http://localhost:1313/english-hub/tags/%E7%94%9F%E6%B4%BB%E6%96%B9%E5%BC%8F/</link>
+				<pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/english-hub/tags/%E7%94%9F%E6%B4%BB%E6%96%B9%E5%BC%8F/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>阅读笔记</title>
+				<link>http://localhost:1313/english-hub/tags/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/</link>
+				<pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/english-hub/tags/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>非虚构</title>
+				<link>http://localhost:1313/english-hub/tags/%E9%9D%9E%E8%99%9A%E6%9E%84/</link>
+				<pubDate>Sat, 25 Jul 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/english-hub/tags/%E9%9D%9E%E8%99%9A%E6%9E%84/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>BBC</title>
+				<link>http://localhost:1313/english-hub/tags/bbc/</link>
+				<pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/english-hub/tags/bbc/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>听力笔记</title>
+				<link>http://localhost:1313/english-hub/tags/%E5%90%AC%E5%8A%9B%E7%AC%94%E8%AE%B0/</link>
+				<pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/english-hub/tags/%E5%90%AC%E5%8A%9B%E7%AC%94%E8%AE%B0/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>城市生活</title>
+				<link>http://localhost:1313/english-hub/tags/%E5%9F%8E%E5%B8%82%E7%94%9F%E6%B4%BB/</link>
+				<pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/english-hub/tags/%E5%9F%8E%E5%B8%82%E7%94%9F%E6%B4%BB/</guid>
+				<description></description>
+			</item>
+	</channel>
+</rss>

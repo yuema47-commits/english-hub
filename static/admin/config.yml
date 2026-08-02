@@ -1,0 +1,58 @@
+backend:
+  name: git-gateway
+  branch: main
+  repo: yourusername/english-hub  # ← 替换为你的 GitHub 用户名和仓库名
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "methods"
+    label: "学习方法"
+    folder: "content/methods"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "标题", name: "title", widget: "string" }
+      - { label: "发布日期", name: "date", widget: "datetime" }
+      - { label: "描述", name: "description", widget: "text", required: false }
+      - { label: "标签", name: "tags", widget: "list", required: false }
+      - { label: "正文", name: "body", widget: "markdown" }
+
+  - name: "reading"
+    label: "阅读材料"
+    folder: "content/reading"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "标题", name: "title", widget: "string" }
+      - { label: "发布日期", name: "date", widget: "datetime" }
+      - { label: "来源", name: "source", widget: "string", required: false }
+      - { label: "原作者", name: "author", widget: "string", required: false }
+      - { label: "难度", name: "level", widget: "select", options: ["初级", "中级", "高级"], default: "中级" }
+      - { label: "描述", name: "description", widget: "text", required: false }
+      - { label: "标签", name: "tags", widget: "list", required: false }
+      - { label: "附件", name: "files", widget: "file", required: false, media_library: { config: { multiple: true } } }
+      - { label: "正文", name: "body", widget: "markdown" }
+
+  - name: "listening"
+    label: "听力练习"
+    folder: "content/listening"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "标题", name: "title", widget: "string" }
+      - { label: "发布日期", name: "date", widget: "datetime" }
+      - { label: "来源", name: "source", widget: "string", required: false }
+      - { label: "时长", name: "duration", widget: "string", required: false }
+      - { label: "难度", name: "level", widget: "select", options: ["初级", "中级", "高级"], default: "中级" }
+      - { label: "描述", name: "description", widget: "text", required: false }
+      - { label: "标签", name: "tags", widget: "list", required: false }
+      - { label: "音频文件", name: "audio", widget: "file", required: false }
+      - { label: "正文", name: "body", widget: "markdown" }

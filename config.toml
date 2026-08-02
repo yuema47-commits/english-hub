@@ -1,0 +1,38 @@
+baseURL = "https://yourusername.github.io/english-hub/"
+locale = "zh-cn"
+title = "英语学习空间"
+theme = "english-hub"
+paginate = 9
+
+[params]
+  description = "我的个人英语学习空间 — 方法、阅读与听力"
+  motto = "Every day a little English, a little better me."
+  author = "English Learner"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "学习方法"
+    url = "/methods/"
+    weight = 2
+  [[menu.main]]
+    name = "阅读材料"
+    url = "/reading/"
+    weight = 3
+  [[menu.main]]
+    name = "听力练习"
+    url = "/listening/"
+    weight = 4
+
+[outputs]
+  home = ["HTML", "RSS"]
+
+[markup.goldmark.renderer]
+  unsafe = true

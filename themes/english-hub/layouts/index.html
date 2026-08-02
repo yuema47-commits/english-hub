@@ -1,0 +1,135 @@
+{{ define "title" }}{{ .Site.Title }} — {{ .Site.Params.description }}{{ end }}
+
+{{ define "main" }}
+<section class="hero" data-component="hero-overview">
+  <div class="container">
+    <div class="hero-content">
+      <p class="hero-motto">{{ .Site.Params.motto }}</p>
+      <h1>{{ .Site.Title }}</h1>
+      <p class="hero-desc">{{ .Site.Params.description }}</p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">{{ len (where .Site.RegularPages "Section" "methods") }}</span>
+          <span class="stat-label">学习方法</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">{{ len (where .Site.RegularPages "Section" "reading") }}</span>
+          <span class="stat-label">阅读材料</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">{{ len (where .Site.RegularPages "Section" "listening") }}</span>
+          <span class="stat-label">听力练习</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-methods" data-component="learning-methods">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+      </span>
+      <h2>学习方法</h2>
+      <p class="section-desc">分享我在英语学习过程中总结的方法与技巧</p>
+    </div>
+    <div class="card-grid">
+      {{ range first 3 (where .Site.RegularPages "Section" "methods") }}
+      <article class="card card-method">
+        <a href="{{ .Permalink }}">
+          <h3 class="card-title">{{ .Title }}</h3>
+          <p class="card-excerpt">{{ .Summary | plainify | truncate 100 }}</p>
+          <div class="card-meta">
+            {{ with .Params.tags }}
+            {{ range first 3 . }}
+            <span class="tag">{{ . }}</span>
+            {{ end }}
+            {{ end }}
+          </div>
+          <time class="card-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+        </a>
+      </article>
+      {{ else }}
+      <p class="empty-hint">还没有学习方法文章，去 <a href="/admin">后台</a> 添加吧！</p>
+      {{ end }}
+    </div>
+    <div class="section-more">
+      <a href="{{ "methods/" | relURL }}" class="btn btn-method">查看全部学习方法 &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-reading" data-component="reading-materials">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+      </span>
+      <h2>阅读材料</h2>
+      <p class="section-desc">收藏我喜欢的英文文章、书籍摘录和阅读笔记</p>
+    </div>
+    <div class="card-grid">
+      {{ range first 3 (where .Site.RegularPages "Section" "reading") }}
+      <article class="card card-reading">
+        <a href="{{ .Permalink }}">
+          <h3 class="card-title">{{ .Title }}</h3>
+          <p class="card-excerpt">{{ .Summary | plainify | truncate 100 }}</p>
+          <div class="card-meta">
+            {{ with .Params.level }}<span class="tag tag-level">{{ . }}</span>{{ end }}
+            {{ with .Params.tags }}
+            {{ range first 2 . }}
+            <span class="tag">{{ . }}</span>
+            {{ end }}
+            {{ end }}
+          </div>
+          <time class="card-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+        </a>
+      </article>
+      {{ else }}
+      <p class="empty-hint">还没有阅读材料，去 <a href="/admin">后台</a> 添加吧！</p>
+      {{ end }}
+    </div>
+    <div class="section-more">
+      <a href="{{ "reading/" | relURL }}" class="btn btn-reading">查看全部阅读材料 &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-listening" data-component="listening-materials">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+      </span>
+      <h2>听力练习</h2>
+      <p class="section-desc">记录我的听力训练素材 — 播客、新闻、有声书</p>
+    </div>
+    <div class="card-grid">
+      {{ range first 3 (where .Site.RegularPages "Section" "listening") }}
+      <article class="card card-listening">
+        <a href="{{ .Permalink }}">
+          <h3 class="card-title">{{ .Title }}</h3>
+          <p class="card-excerpt">{{ .Summary | plainify | truncate 100 }}</p>
+          <div class="card-meta">
+            {{ with .Params.level }}<span class="tag tag-level">{{ . }}</span>{{ end }}
+            {{ with .Params.duration }}<span class="tag tag-duration">{{ . }}</span>{{ end }}
+            {{ with .Params.tags }}
+            {{ range first 2 . }}
+            <span class="tag">{{ . }}</span>
+            {{ end }}
+            {{ end }}
+          </div>
+          <time class="card-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+        </a>
+      </article>
+      {{ else }}
+      <p class="empty-hint">还没有听力材料，去 <a href="/admin">后台</a> 添加吧！</p>
+      {{ end }}
+    </div>
+    <div class="section-more">
+      <a href="{{ "listening/" | relURL }}" class="btn btn-listening">查看全部听力材料 &rarr;</a>
+    </div>
+  </div>
+</section>
+{{ end }}

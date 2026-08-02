@@ -1,0 +1,15 @@
+<header class="site-header" data-component="site-nav">
+  <div class="container header-inner">
+    <a href="{{ "/" | relURL }}" class="site-logo">{{ .Site.Title }}</a>
+    <nav class="main-nav" id="main-nav">
+      {{ range .Site.Menus.main }}
+      <a href="{{ .URL }}" class="nav-link{{ if eq $.RelPermalink .URL }} active{{ end }}">{{ .Name }}</a>
+      {{ end }}
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>

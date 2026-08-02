@@ -1,0 +1,21 @@
+<footer class="site-footer" data-component="site-footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-motto">
+        <p class="footer-quote">"{{ .Site.Params.motto }}"</p>
+      </div>
+      <div class="footer-links">
+        <h4>推荐资源</h4>
+        <ul>
+          <li><a href="https://www.bbc.co.uk/learningenglish" target="_blank" rel="noopener">BBC Learning English</a></li>
+          <li><a href="https://www.voanews.com/learning-english" target="_blank" rel="noopener">VOA Learning English</a></li>
+          <li><a href="https://dictionary.cambridge.org" target="_blank" rel="noopener">Cambridge Dictionary</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; {{ now.Year }} {{ .Site.Params.author }}. All rights reserved.</p>
+      <p class="footer-powered">Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a> &amp; <a href="https://decapcms.org" target="_blank" rel="noopener">Decap CMS</a></p>
+    </div>
+  </div>
+</footer>
