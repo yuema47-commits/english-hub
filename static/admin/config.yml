@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   branch: main
-  repo: yourusername/english-hub  # ← 替换为你的 GitHub 用户名和仓库名
+  repo: yuema47-commits/english-hub
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
